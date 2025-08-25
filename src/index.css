@@ -1,0 +1,9 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "SF Pro Text", sans-serif;
+    --third-family: "Lobster", sans-serif;
+    --font3: "Eudoxus Sans", sans-serif;
+    --bacground: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+    --hover: #ff9393;
+
+}

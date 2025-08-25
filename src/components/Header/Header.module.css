@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.text_logo {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+}
+
+
+.text_logo_dot {
+    color: #ff7426;
+}
+
+.link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.link:hover {
+    color: var(--hover);
+    transition: 0.3s;
+}
