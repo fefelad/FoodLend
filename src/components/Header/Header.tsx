@@ -1,4 +1,7 @@
 import styles from "./Header.module.css";
+import facebook from "../../assets/facebook.svg";
+import instagram from "../../assets/instagram.svg";
+import twiter from "../../assets/twitter.svg";
 
 function Header() {
   return (
@@ -37,7 +40,11 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <div className={styles.wrapper_link}></div>
+      <div className={styles.wrapper_link}>
+        <img src={facebook} alt="facebook" />
+        <img src={twiter} alt="twiter" />
+        <img src={instagram} alt="instagram" />
+      </div>
     </header>
   );
 }

@@ -1,0 +1,96 @@
+.slider_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #e7fafe;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.info_box {
+    padding: 50px;
+}
+
+.info_recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 30px;
+    width: 156px;
+    height: 45px;
+    background: #fff;
+    box-shadow: 10px 20px 40px 0 rgba(41, 64, 70, 0.1);
+}
+
+.recipes_text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+
+.text_h1 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.text_description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.atribute_wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.people_action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px
+}
+
+.people_info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.people_profile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.people_name {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.poeple_data {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}

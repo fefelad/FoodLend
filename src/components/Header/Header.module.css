@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 0px 40px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .list {
@@ -35,4 +36,10 @@
 .link:hover {
     color: var(--hover);
     transition: 0.3s;
+}
+
+.wrapper_link {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }

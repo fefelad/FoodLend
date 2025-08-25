@@ -1,0 +1,18 @@
+.wrapper_atribut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    gap: 10px;
+    width: 139px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.text_atribut {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}
