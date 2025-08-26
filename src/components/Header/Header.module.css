@@ -42,4 +42,14 @@
     display: flex;
     align-items: center;
     gap: 40px;
+
+}
+
+.wrapper_link img {
+    cursor: pointer;
+}
+
+.active {
+    color: #ff642b;
+    font-weight: 600;
 }

@@ -2,8 +2,15 @@ import styles from "./Header.module.css";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import twiter from "../../assets/twitter.svg";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+
+  const IsActiveLink = (path: string) => {
+    return location.pathname === path ? styles.active : "";
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.warpper_logo}>
@@ -14,29 +21,41 @@ function Header() {
       <nav className={styles.navigation}>
         <ul className={styles.list}>
           <li>
-            <a className={styles.link} href="">
+            <Link className={`${styles.link} ${IsActiveLink("/")}`} to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className={styles.link} href="">
+            <Link
+              className={`${styles.link} ${IsActiveLink("/recipes")}`}
+              to="/recipes"
+            >
               Recipes
-            </a>
+            </Link>
           </li>
           <li>
-            <a className={styles.link} href="">
+            <Link
+              className={`${styles.link} ${IsActiveLink("/blog")}`}
+              to="/blog"
+            >
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a className={styles.link} href="">
+            <Link
+              className={`${styles.link} ${IsActiveLink("/contact")}`}
+              to="/contact"
+            >
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a className={styles.link} href="">
+            <Link
+              className={`${styles.link} ${IsActiveLink("/about")}`}
+              to="/about"
+            >
               About us
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
