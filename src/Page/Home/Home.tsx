@@ -1,5 +1,6 @@
 import Action from "../../components/Action/Action";
 import Categories from "../../components/Categories/Categories";
+import InstagramPost from "../../components/InstagramPost/InstagramPost";
 import Promo from "../../components/Promo/Promo";
 import TestRecipes from "../../components/TestRecipes/TestRecipes";
 
@@ -12,6 +13,7 @@ function Home() {
       <Categories />
       <TestRecipes />
       <Promo />
+      <InstagramPost />
     </div>
   );
 }

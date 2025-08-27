@@ -1,5 +1,6 @@
 .promo_wrapper {
     margin-top: 160px;
+    margin-bottom: 160px;
     display: flex;
     justify-content: space-around;
     align-items: center;

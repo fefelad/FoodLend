@@ -6,12 +6,13 @@ import play from "../../../assets/icon/PlayCircle.svg";
 interface BtnProps {
   textBtn: string;
   img?: "play" | "inst" | null;
+  onClick?: () => void;
 }
 
-function Btn({ textBtn, img }: BtnProps) {
+function Btn({ textBtn, img, onClick }: BtnProps) {
   const imgIcon = img === "play" ? play : img === "inst" ? inst : null;
   return (
-    <button className={styles.btn}>
+    <button onClick={onClick} className={styles.btn}>
       <p className={styles.text_btn}>{textBtn}</p>
       {imgIcon && <img src={imgIcon} alt="" />}
     </button>

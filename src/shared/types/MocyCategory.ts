@@ -11,3 +11,19 @@ export interface ReceptType {
   img: string;
   helpatribut: string;
 }
+
+export interface InstaPost {
+  id?: number;
+  title?: string;
+  img?: string;
+  plase?: string;
+  data?: string;
+}
+
+export interface InsPostResponse {
+  posts: InstaPost[];
+  total: number;
+  page: number;
+  limit: number;
+  hasMore: boolean;
+}

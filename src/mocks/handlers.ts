@@ -1,11 +1,17 @@
 import { http, HttpResponse } from "msw";
+// категории
 import breakfast from "../assets/Categories/Breakfast.png";
 import vegan from "../assets/Categories/vegan.png";
 import meat from "../assets/Categories/Meat.png";
 import dessert from "../assets/Categories/desert.png";
 import lunch from "../assets/Categories/lunch.png";
 import chocolate from "../assets/Categories/chocolate.png";
-import type { CategoriesType, ReceptType } from "../shared/types/MocyCategory";
+import type {
+  CategoriesType,
+  ReceptType,
+  InstaPost,
+} from "../shared/types/MocyCategory";
+// Рецепты
 import burger from "../assets/simpleRecipes/burger.png";
 import salmon from "../assets/simpleRecipes/salmon.png";
 import pancake from "../assets/simpleRecipes/pancake.png";
@@ -14,6 +20,11 @@ import meatbol from "../assets/simpleRecipes/metabols.png";
 import bluebery from "../assets/simpleRecipes/bluebery.png";
 import chicken from "../assets/simpleRecipes/chicken.png";
 import pasta from "../assets/simpleRecipes/pasta.png";
+// инста посты
+import saladInsta from "../assets/InstaPost/saladInsta.png";
+import pancakeInsta from "../assets/InstaPost/pancakeInsta.png";
+import onionInsta from "../assets/InstaPost/onionInsta.png";
+import meatInsta from "../assets/InstaPost/MeatInsta.png";
 
 const categories: CategoriesType[] = [
   {
@@ -111,13 +122,89 @@ const simpeRecipes: ReceptType[] = [
   },
 ];
 
+const InstaPost: InstaPost[] = [
+  {
+    id: 1,
+    title:
+      "The vegetables dishes need to have certain vitamin for those people",
+    img: saladInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 2,
+    title:
+      "Sweet food can bring someon into happiness as long as they don’t eat to much",
+    img: pancakeInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 3,
+    title:
+      "What are you doing before start cooking? prepare the  tools or ingredients?",
+    img: onionInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 4,
+    title:
+      " Steak never be wrong, it’s suitable for you who want romantic dinner",
+    img: meatInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 5,
+    title:
+      "Garlic shrimp never be wrong. It’s for you who want a luxurious dinner in 15 minutes",
+    img: meatInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 6,
+    title:
+      "Grilled vegetables never be wrong. It’s for you who want a taste of summer on your plate",
+    img: onionInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+  {
+    id: 7,
+    title:
+      "The vegetables dishes need to have certain vitamin for those people",
+    img: saladInsta,
+    plase: "Tokyo, Japan",
+    data: "September 19",
+  },
+];
+
 export const handlers = [
-  //  запрос - GET /api/caregories
   http.get("/api/caregories", () => {
     return HttpResponse.json(categories);
   }),
 
   http.get("api/simpeRecipes", () => {
     return HttpResponse.json(simpeRecipes);
+  }),
+
+  http.get("api/InstaPost", ({ request }) => {
+    const url = new URL(request.url);
+    const page = parseInt(url.searchParams.get("page") || "1");
+    const limit = parseInt(url.searchParams.get("limit") || "4");
+
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedPosts = InstaPost.slice(startIndex, endIndex);
+
+    return HttpResponse.json({
+      posts: paginatedPosts,
+      total: InstaPost.length,
+      page,
+      limit,
+      hasMore: endIndex < InstaPost.length,
+    });
   }),
 ];
