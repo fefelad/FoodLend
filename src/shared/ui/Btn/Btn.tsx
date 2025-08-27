@@ -5,15 +5,15 @@ import play from "../../../assets/icon/PlayCircle.svg";
 
 interface BtnProps {
   textBtn: string;
-  img: "play" | "inst";
+  img?: "play" | "inst" | null;
 }
 
 function Btn({ textBtn, img }: BtnProps) {
-  const imgIcon = img === "play" ? play : inst;
+  const imgIcon = img === "play" ? play : img === "inst" ? inst : null;
   return (
     <button className={styles.btn}>
       <p className={styles.text_btn}>{textBtn}</p>
-      <img src={imgIcon} alt="" />
+      {imgIcon && <img src={imgIcon} alt="" />}
     </button>
   );
 }

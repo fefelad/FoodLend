@@ -1,0 +1,13 @@
+.btn_like {
+    position: relative;
+    bottom: 380px;
+    left: 310px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

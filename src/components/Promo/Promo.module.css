@@ -1,0 +1,94 @@
+.promo_wrapper {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+
+}
+
+
+.promo_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.promo_desc {
+    padding-top: 24px;
+    padding-bottom: 72px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.promo_right_box {
+    padding-top: 100px;
+}
+
+.promo_left_img {
+    position: relative;
+    width: 676px;
+    height: 597px;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #e7f9fd 100%);
+    border-radius: 30px;
+
+}
+
+
+.tomato {
+    position: relative;
+    bottom: 150px;
+    right: 25px;
+    animation: floatUpDown 3s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.meat {
+    position: relative;
+    bottom: 90%;
+    animation: floatUpDown 3.2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.onion {
+    position: relative;
+    bottom: 85%;
+    left: 42%;
+    animation: floatUpDown 2.8s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.brokal {
+    position: relative;
+    bottom: 72%;
+    left: 51%;
+    animation: floatUpDown 3.1s ease-in-out infinite;
+    animation-delay: 1.5s;
+
+}
+
+.tomato,
+.meat,
+.onion,
+.brokal {
+    transition: all 0.3s ease;
+}
+
+
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}

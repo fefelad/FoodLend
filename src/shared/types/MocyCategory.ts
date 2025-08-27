@@ -4,3 +4,10 @@ export interface CategoriesType {
   img?: string;
   bgColor: string;
 }
+
+export interface ReceptType {
+  id?: number;
+  description?: string;
+  img: string;
+  helpatribut: string;
+}
