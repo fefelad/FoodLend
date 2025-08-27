@@ -10,6 +10,7 @@ import type {
   CategoriesType,
   ReceptType,
   InstaPost,
+  FastPost,
 } from "../shared/types/MocyCategory";
 // Рецепты
 import burger from "../assets/simpleRecipes/burger.png";
@@ -25,6 +26,16 @@ import saladInsta from "../assets/InstaPost/saladInsta.png";
 import pancakeInsta from "../assets/InstaPost/pancakeInsta.png";
 import onionInsta from "../assets/InstaPost/onionInsta.png";
 import meatInsta from "../assets/InstaPost/MeatInsta.png";
+
+// фаст рецепты
+import fruitsalad from "../assets/FastRecipes/fuitssalad.png";
+import cheseburger from "../assets/FastRecipes/cheeseburger.png";
+import asparagus from "../assets/FastRecipes/Asparagus.png";
+import taco from "../assets/FastRecipes/taco.png";
+import chickensalad from "../assets/FastRecipes/ChickenSalad.png";
+import sandwich from "../assets/FastRecipes/sandwitch.png";
+import veganLettuce from "../assets/FastRecipes/VeganLettuce.png";
+import soup from "../assets/FastRecipes/soup.png";
 
 const categories: CategoriesType[] = [
   {
@@ -166,7 +177,7 @@ const InstaPost: InstaPost[] = [
   {
     id: 6,
     title:
-      "Grilled vegetables never be wrong. It’s for you who want a taste of summer on your plate",
+      "Grilled vegetables never be wrong. It’s for you who want a taste of summer",
     img: onionInsta,
     plase: "Tokyo, Japan",
     data: "September 19",
@@ -181,6 +192,57 @@ const InstaPost: InstaPost[] = [
   },
 ];
 
+const FastPost: FastPost[] = [
+  {
+    id: 1,
+    description: "Mixed Tropical Fruit Salad with Superfood Boosts ",
+    img: fruitsalad,
+    helpatribut: "Healthy",
+  },
+  {
+    id: 2,
+    description: "Big and Juicy Wagyu Beef Cheeseburger",
+    img: cheseburger,
+    helpatribut: "Western",
+  },
+  {
+    id: 3,
+    description: "Healthy Japanese Fried Rice with Asparagus",
+    img: asparagus,
+    helpatribut: "Healthy",
+  },
+  {
+    id: 4,
+    description: "Cauliflower Walnut Vegetarian Taco Meat",
+    img: taco,
+    helpatribut: "Eastern",
+  },
+  {
+    id: 5,
+    description: "Rainbow Chicken Salad with Almond Honey Mustard Dressing",
+    img: chickensalad,
+    helpatribut: "Healthy",
+  },
+  {
+    id: 6,
+    description: "Barbeque Spicy Sandwiches with Chips ",
+    img: sandwich,
+    helpatribut: "Snack",
+  },
+  {
+    id: 7,
+    description: "Firecracker Vegan Lettuce Wraps - Spicy! ",
+    img: veganLettuce,
+    helpatribut: "Seafood",
+  },
+  {
+    id: 8,
+    description: "Chicken Ramen Soup with Mushroom ",
+    img: soup,
+    helpatribut: "Japanese",
+  },
+];
+
 export const handlers = [
   http.get("/api/caregories", () => {
     return HttpResponse.json(categories);
@@ -188,6 +250,10 @@ export const handlers = [
 
   http.get("api/simpeRecipes", () => {
     return HttpResponse.json(simpeRecipes);
+  }),
+
+  http.get("api/FastPost", () => {
+    return HttpResponse.json(FastPost);
   }),
 
   http.get("api/InstaPost", ({ request }) => {

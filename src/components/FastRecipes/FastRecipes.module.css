@@ -1,0 +1,66 @@
+.FastRecipes_wrapper {
+    margin-top: 160px;
+}
+
+.header_titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.title_header {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.title_desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.flex_fastrecipes {
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+
+.fastRecipes_text {
+    margin-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 144%;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.fastRecipes_article {
+    width: 290px;
+    height: 316px;
+}
+
+.btn_like {
+    position: relative;
+    right: 30%;
+    top: 23%;
+}
+
+.fastRecipes_atribute {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}

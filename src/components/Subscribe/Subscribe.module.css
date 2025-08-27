@@ -1,0 +1,68 @@
+.Subscribe_wrapper {
+    position: relative;
+    border-radius: 60px;
+    height: 442px;
+    background: #e7f9fd;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 160px;
+}
+
+.wrapper_text_header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Subscribe_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.Subscribe_desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input {
+    border-radius: 20px;
+    width: 480px;
+    height: 60px;
+    background: #fff;
+    padding: 32px;
+}
+
+.salates {
+    position: absolute;
+    left: -200px;
+    bottom: -220px;
+    width: 700px;
+    height: 700px;
+
+}
+
+.eda {
+    position: absolute;
+    right: -130px;
+    bottom: -150px;
+
+}
+
+.link_subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

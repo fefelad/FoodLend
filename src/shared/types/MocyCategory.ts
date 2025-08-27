@@ -27,3 +27,10 @@ export interface InsPostResponse {
   limit: number;
   hasMore: boolean;
 }
+
+export interface FastPost {
+  id?: number;
+  description?: string;
+  img: string;
+  helpatribut: string;
+}
