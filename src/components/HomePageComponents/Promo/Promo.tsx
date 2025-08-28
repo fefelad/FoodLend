@@ -1,11 +1,11 @@
-import Btn from "../../shared/ui/Btn/Btn";
+import Btn from "../../../shared/ui/Btn/Btn";
 import styles from "./Promo.module.css";
 
-import cook from "../../assets/Promo/kitchener.png";
-import tomato from "../../assets/Promo/tomato.png";
-import maet from "../../assets/Categories/Meat.png";
-import onion from "../../assets/Promo/onion.png";
-import brokal from "../../assets/Categories/vegan.png";
+import cook from "../../../assets/Promo/kitchener.png";
+import tomato from "../../../assets/Promo/tomato.png";
+import maet from "../../../assets/Categories/Meat.png";
+import onion from "../../../assets/Promo/onion.png";
+import brokal from "../../../assets/Categories/vegan.png";
 
 function Promo() {
   return (

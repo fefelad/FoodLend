@@ -1,4 +1,3 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./app/App.tsx";
 import "./index.css";
@@ -23,9 +22,5 @@ const root = createRoot(container);
 
 // Запускаем моки и рендерим приложение
 setupMocks().finally(() => {
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
+  root.render(<App />);
 });

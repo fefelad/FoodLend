@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import styles from "./TestRecipes.module.css";
-import type { ReceptType } from "../../shared/types/MocyCategory";
+import type { ReceptType } from "../../../shared/types/MocyCategory";
 import axios from "axios";
-import HelpAtribut from "../../shared/ui/HelpAtribut/HelpAtribut";
-import Like from "../../shared/ui/Like/Like";
+import HelpAtribut from "../../../shared/ui/HelpAtribut/HelpAtribut";
+import Like from "../../../shared/ui/Like/Like";
 
 function TestRecipes() {
   const [recipes, setRecipes] = useState<ReceptType[]>([]);

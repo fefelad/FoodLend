@@ -3,15 +3,15 @@ import styles from "./Instagram.module.css";
 import type {
   InstaPost,
   InsPostResponse,
-} from "../../shared/types/MocyCategory";
+} from "../../../shared/types/MocyCategory";
 import axios from "axios";
-import logoPost from "../../assets/InstaPost/logo.png";
+import logoPost from "../../../assets/InstaPost/logo.png";
 
-import like from "../../assets/icon/like.svg";
-import message from "../../assets/icon/Messanger.svg";
-import comment from "../../assets/icon/Comment.svg";
-import save from "../../assets/icon/Save.svg";
-import Btn from "../../shared/ui/Btn/Btn";
+import like from "../../../assets/icon/like.svg";
+import message from "../../../assets/icon/Messanger.svg";
+import comment from "../../../assets/icon/Comment.svg";
+import save from "../../../assets/icon/Save.svg";
+import Btn from "../../../shared/ui/Btn/Btn";
 
 function InstagramPost() {
   const [PostInsta, setPostInsta] = useState<InstaPost[]>([]);

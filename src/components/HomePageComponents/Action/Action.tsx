@@ -1,9 +1,9 @@
 import styles from "./Action.module.css";
-import note from "../../assets/note.png";
-import HelpAtribut from "../../shared/ui/HelpAtribut/HelpAtribut";
-import Btn from "../../shared/ui/Btn/Btn";
-import people from "../../assets/people.png";
-import chikenwing from "../../assets/Chicken_wings.png";
+import note from "../../../assets/note.png";
+import HelpAtribut from "../../../shared/ui/HelpAtribut/HelpAtribut";
+import Btn from "../../../shared/ui/Btn/Btn";
+import people from "../../../assets/people.png";
+import chikenwing from "../../../assets/Chicken_wings.png";
 
 function Action() {
   return (

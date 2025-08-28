@@ -1,10 +1,10 @@
-import Action from "../../components/Action/Action";
-import Categories from "../../components/Categories/Categories";
-import FastRecipes from "../../components/FastRecipes/FastRecipes";
-import InstagramPost from "../../components/InstagramPost/InstagramPost";
-import Promo from "../../components/Promo/Promo";
-import Subscribe from "../../components/Subscribe/Subscribe";
-import TestRecipes from "../../components/TestRecipes/TestRecipes";
+import Action from "../../components/HomePageComponents/Action/Action";
+import Categories from "../../components/HomePageComponents/Categories/Categories";
+import FastRecipes from "../../components/HomePageComponents/FastRecipes/FastRecipes";
+import InstagramPost from "../../components/HomePageComponents/InstagramPost/InstagramPost";
+import Promo from "../../components/HomePageComponents/Promo/Promo";
+import Subscribe from "../../components/HomePageComponents/Subscribe/Subscribe";
+import TestRecipes from "../../components/HomePageComponents/TestRecipes/TestRecipes";
 
 import styles from "./home.module.css";
 

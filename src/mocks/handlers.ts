@@ -11,6 +11,7 @@ import type {
   ReceptType,
   InstaPost,
   FastPost,
+  RecipesData,
 } from "../shared/types/MocyCategory";
 // Рецепты
 import burger from "../assets/simpleRecipes/burger.png";
@@ -243,6 +244,219 @@ const FastPost: FastPost[] = [
   },
 ];
 
+const recipesData: RecipesData = {
+  recipes: [
+    {
+      id: 1,
+      description: "Big and Juicy Wagyu Beef Cheeseburger",
+      img: burger,
+      helpatribut: "Snack",
+      nutrition: {
+        calories: 780,
+        totalFat: 48,
+        protein: 42,
+        carbohydrates: 38,
+        cholesterol: 145,
+      },
+    },
+    {
+      id: 2,
+      description: "Fresh Lime Roasted Salmon with Ginger Sauce",
+      img: salmon,
+      helpatribut: "Fish",
+      nutrition: {
+        calories: 320,
+        totalFat: 18,
+        protein: 34,
+        carbohydrates: 6,
+        cholesterol: 85,
+      },
+    },
+    {
+      id: 3,
+      description: "Strawberry Oatmeal Pancake with Honey Syrup",
+      img: pancake,
+      helpatribut: "Breakfast",
+      nutrition: {
+        calories: 280,
+        totalFat: 8,
+        protein: 9,
+        carbohydrates: 45,
+        cholesterol: 65,
+      },
+    },
+    {
+      id: 4,
+      description: "Fresh and Healthy Mixed Mayonnaise Salad",
+      img: salad,
+      helpatribut: "Healthy",
+      nutrition: {
+        calories: 180,
+        totalFat: 12,
+        protein: 6,
+        carbohydrates: 15,
+        cholesterol: 25,
+      },
+    },
+    {
+      id: 5,
+      description: "Chicken Meatballs with Cream Cheese",
+      img: meatbol,
+      helpatribut: "Meat",
+      nutrition: {
+        calories: 320,
+        totalFat: 22,
+        protein: 24,
+        carbohydrates: 8,
+        cholesterol: 95,
+      },
+    },
+    {
+      id: 6,
+      description: "Fruity Pancake with Orange & Blueberry",
+      img: bluebery,
+      helpatribut: "Sweet",
+      nutrition: {
+        calories: 210,
+        totalFat: 5,
+        protein: 7,
+        carbohydrates: 36,
+        cholesterol: 45,
+      },
+    },
+    {
+      id: 7,
+      description: "The Best Easy One Pot Chicken and Rice",
+      img: chicken,
+      helpatribut: "Snack",
+      nutrition: {
+        calories: 420,
+        totalFat: 14,
+        protein: 32,
+        carbohydrates: 45,
+        cholesterol: 88,
+      },
+    },
+    {
+      id: 8,
+      description: "The Creamiest Creamy Chicken and Bacon Pasta",
+      img: pasta,
+      helpatribut: "Noodles",
+      nutrition: {
+        calories: 560,
+        totalFat: 26,
+        protein: 28,
+        carbohydrates: 52,
+        cholesterol: 75,
+      },
+    },
+    {
+      id: 9,
+      description: "Mixed Tropical Fruit Salad with Superfood Boosts",
+      img: fruitsalad,
+      helpatribut: "Healthy",
+      nutrition: {
+        calories: 120,
+        totalFat: 1,
+        protein: 3,
+        carbohydrates: 28,
+        cholesterol: 0,
+      },
+    },
+    {
+      id: 10,
+      description: "Big and Juicy Wagyu Beef Cheeseburger",
+      img: cheseburger,
+      helpatribut: "Western",
+      nutrition: {
+        calories: 820,
+        totalFat: 52,
+        protein: 45,
+        carbohydrates: 42,
+        cholesterol: 155,
+      },
+    },
+    {
+      id: 11,
+      description: "Healthy Japanese Fried Rice with Asparagus",
+      img: asparagus,
+      helpatribut: "Healthy",
+      nutrition: {
+        calories: 280,
+        totalFat: 9,
+        protein: 12,
+        carbohydrates: 38,
+        cholesterol: 35,
+      },
+    },
+    {
+      id: 12,
+      description: "Cauliflower Walnut Vegetarian Taco Meat",
+      img: taco,
+      helpatribut: "Eastern",
+      nutrition: {
+        calories: 190,
+        totalFat: 14,
+        protein: 8,
+        carbohydrates: 12,
+        cholesterol: 0,
+      },
+    },
+    {
+      id: 13,
+      description: "Rainbow Chicken Salad with Almond Honey Mustard Dressing",
+      img: chickensalad,
+      helpatribut: "Healthy",
+      nutrition: {
+        calories: 240,
+        totalFat: 12,
+        protein: 22,
+        carbohydrates: 14,
+        cholesterol: 55,
+      },
+    },
+    {
+      id: 14,
+      description: "Barbeque Spicy Sandwiches with Chips",
+      img: sandwich,
+      helpatribut: "Snack",
+      nutrition: {
+        calories: 380,
+        totalFat: 16,
+        protein: 18,
+        carbohydrates: 42,
+        cholesterol: 45,
+      },
+    },
+    {
+      id: 15,
+      description: "Firecracker Vegan Lettuce Wraps - Spicy!",
+      img: veganLettuce,
+      helpatribut: "Seafood",
+      nutrition: {
+        calories: 95,
+        totalFat: 3,
+        protein: 6,
+        carbohydrates: 14,
+        cholesterol: 0,
+      },
+    },
+    {
+      id: 16,
+      description: "Chicken Ramen Soup with Mushroom",
+      img: soup,
+      helpatribut: "Japanese",
+      nutrition: {
+        calories: 220,
+        totalFat: 6,
+        protein: 20,
+        carbohydrates: 24,
+        cholesterol: 48,
+      },
+    },
+  ],
+};
+
 export const handlers = [
   http.get("/api/caregories", () => {
     return HttpResponse.json(categories);
@@ -254,6 +468,10 @@ export const handlers = [
 
   http.get("api/FastPost", () => {
     return HttpResponse.json(FastPost);
+  }),
+
+  http.get("api/recipesData", () => {
+    return HttpResponse.json(recipesData);
   }),
 
   http.get("api/InstaPost", ({ request }) => {

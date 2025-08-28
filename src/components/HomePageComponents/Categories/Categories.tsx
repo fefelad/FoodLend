@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Categories.module.css";
-import type { CategoriesType } from "../../shared/types/MocyCategory.ts";
+import type { CategoriesType } from "../../../shared/types/MocyCategory.ts";
 import axios from "axios";
 
 function Categories() {

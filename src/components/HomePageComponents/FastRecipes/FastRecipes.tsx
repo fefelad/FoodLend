@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import styles from "./FastRecipes.module.css";
-import type { FastPost } from "../../shared/types/MocyCategory";
+import type { FastPost } from "../../../shared/types/MocyCategory";
 import axios from "axios";
-import Like from "../../shared/ui/Like/Like";
-import HelpAtribut from "../../shared/ui/HelpAtribut/HelpAtribut";
+import Like from "../../../shared/ui/Like/Like";
+import HelpAtribut from "../../../shared/ui/HelpAtribut/HelpAtribut";
 
 function FastRecipes() {
   const [FastRecipes, setFastRecipes] = useState<FastPost[]>([]);

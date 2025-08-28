@@ -1,8 +1,8 @@
 import styles from "./Subscribe.module.css";
 
-import salat from "../../assets/subscribe/salad.png";
-import eda from "../../assets/subscribe/eda.png";
-import Btn from "../../shared/ui/Btn/Btn";
+import salat from "../../../assets/subscribe/salad.png";
+import eda from "../../../assets/subscribe/eda.png";
+import Btn from "../../../shared/ui/Btn/Btn";
 function Subscribe() {
   return (
     <div className={styles.Subscribe_wrapper}>

@@ -34,3 +34,23 @@ export interface FastPost {
   img: string;
   helpatribut: string;
 }
+
+export interface NutritionInfo {
+  calories: number;
+  totalFat: number;
+  protein: number;
+  carbohydrates: number;
+  cholesterol: number;
+}
+
+export interface Recipe {
+  id: number;
+  description: string;
+  img: string;
+  helpatribut: string;
+  nutrition: NutritionInfo;
+}
+
+export interface RecipesData {
+  recipes: Recipe[];
+}
