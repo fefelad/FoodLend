@@ -4,6 +4,7 @@ import styles from "./SerchRecipes.module.css";
 import type { Recipe, RecipesData } from "../../../shared/types/MocyCategory";
 import axios from "axios";
 import HelpAtribut from "../../../shared/ui/HelpAtribut/HelpAtribut";
+import { Link } from "react-router-dom";
 
 function SerchRecipes() {
   const [RecipesData, setRecipeData] = useState<Recipe[]>([]);
@@ -63,14 +64,16 @@ function SerchRecipes() {
 
       <div className={styles.allRecipes}>
         {FilterAtrubute.map((recipes) => (
-          <div className={styles.recipes_all} key={recipes.id}>
-            <img className={styles.recipes_img} src={recipes.img} alt="#" />
-            <p className={styles.recipe_desc}>{recipes.description}</p>
-            <div className={styles.atribute}>
-              <HelpAtribut text="30 Minutes" type="time" />
-              <HelpAtribut text={recipes.helpatribut} type="meat" />
+          <Link to={`/recipes/${recipes.id}`} key={recipes.id}>
+            <div className={styles.recipes_all}>
+              <img className={styles.recipes_img} src={recipes.img} alt="#" />
+              <p className={styles.recipe_desc}>{recipes.description}</p>
+              <div className={styles.atribute}>
+                <HelpAtribut text="30 Minutes" type="time" />
+                <HelpAtribut text={recipes.helpatribut} type="meat" />
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

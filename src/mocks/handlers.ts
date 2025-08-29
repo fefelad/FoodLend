@@ -244,7 +244,7 @@ const FastPost: FastPost[] = [
   },
 ];
 
-const recipesData: RecipesData = {
+export const recipesData: RecipesData = {
   recipes: [
     {
       id: 1,
