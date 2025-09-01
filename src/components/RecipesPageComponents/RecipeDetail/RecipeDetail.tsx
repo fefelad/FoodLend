@@ -20,45 +20,59 @@ function RecipeDetail() {
   return (
     <div className={styles.recipeDetail_wraper}>
       <div className={styles.recipeDetail}>
-        <Link to="/recipes" className={styles.backButton}>
-          ← Назад к рецептам
-        </Link>
+        <div className={styles.link_back}>
+          <Link to="/recipes" className={styles.backButton}>
+            <p className={styles.back_toRecipes}> Назад к рецептам</p>
+          </Link>
+        </div>
 
-        <div className={styles.recipeContent}>
-          <img
-            src={recipe.img}
-            alt={recipe.description}
-            className={styles.recipeImage}
-          />
+        <h1 className={styles.title_desc}>{recipe.description}</h1>
+        <div className={styles.wrapper_reicpes}>
+          <div>
+            <img
+              width={840}
+              height={600}
+              src={recipe.img}
+              alt={recipe.description}
+              className={styles.recipeImage}
+            />
+          </div>
+          <div className={styles.nutrition_information}>
+            <h2 className={styles.title_information}>Nutrition Information</h2>
+            <div className={styles.wrapper_info__recipes}>
+              <p className={styles.recipe_calories}>Calories</p>
+              <p className={styles.recipe_desc}>
+                {recipe.nutrition.calories} kcal
+              </p>
+            </div>
+            <div className={styles.wrapper_info__recipes}>
+              <p className={styles.recipe_Total_Fat}>Total Fat</p>
+              <p className={styles.recipe_desc}>
+                {recipe.nutrition.totalFat} g
+              </p>
+            </div>
+            <div className={styles.wrapper_info__recipes}>
+              <p className={styles.recipe_protein}>Protein</p>
+              <p className={styles.recipe_desc}>{recipe.nutrition.protein} g</p>
+            </div>
+            <div className={styles.wrapper_info__recipes}>
+              <p className={styles.recipe_arbohydrate}>Carbohydrate</p>
+              <p className={styles.recipe_desc}>
+                {recipe.nutrition.carbohydrates} g
+              </p>
+            </div>
+            <div className={styles.wrapper_info__recipes}>
+              <p className={styles.recipe_Cholesterol}>Cholesterol</p>
+              <p className={styles.recipe_desc}>
+                {recipe.nutrition.cholesterol} mg
+              </p>
+            </div>
 
-          <div className={styles.recipeInfo}>
-            <h1>{recipe.description}</h1>
-            <p className={styles.category}>Категория: {recipe.helpatribut}</p>
-
-            <div className={styles.nutritionSection}>
-              <h2>Пищевая ценность</h2>
-              <div className={styles.nutritionGrid}>
-                <div className={styles.nutritionItem}>
-                  <span>Калории:</span>
-                  <strong>{recipe.nutrition.calories} kcal</strong>
-                </div>
-                <div className={styles.nutritionItem}>
-                  <span>Жиры:</span>
-                  <strong>{recipe.nutrition.totalFat}g</strong>
-                </div>
-                <div className={styles.nutritionItem}>
-                  <span>Белки:</span>
-                  <strong>{recipe.nutrition.protein}g</strong>
-                </div>
-                <div className={styles.nutritionItem}>
-                  <span>Углеводы:</span>
-                  <strong>{recipe.nutrition.carbohydrates}g</strong>
-                </div>
-                <div className={styles.nutritionItem}>
-                  <span>Холестерин:</span>
-                  <strong>{recipe.nutrition.cholesterol}mg</strong>
-                </div>
-              </div>
+            <div>
+              <p className={styles.text_about}>
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>

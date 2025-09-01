@@ -1,0 +1,121 @@
+.title_desc {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.back_toRecipes {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #000;
+
+}
+
+.link_back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0px 30px;
+}
+
+.content_atribute {
+    display: flex;
+    gap: 50px;
+}
+
+
+.wrapper_reicpes {
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.nutrition_information {
+    border-radius: 30px;
+    width: 400px;
+    height: 570px;
+    background: #e7fafe;
+    padding: 32px;
+}
+
+.wrapper_info__recipes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.title_information {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.recipe_calories {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipe_Total_Fat {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipe_protein {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipe_arbohydrate {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipe_Cholesterol {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.recipe_desc {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    text-align: right;
+    color: #000;
+}
+
+.text_about {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 130px;
+}
