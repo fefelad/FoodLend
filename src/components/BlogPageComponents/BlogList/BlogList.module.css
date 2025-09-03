@@ -1,0 +1,125 @@
+.wrapper_blogList {
+    margin-top: 100px;
+}
+
+.haeder_blog__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #000;
+}
+
+.haeder_blog__description {
+    margin-top: 24px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.serch_panel {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn_link {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginationButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.pageButton {
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+
+}
+
+.pageButton:hover:not(:disabled) {
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.pageButton.active {
+    background: black;
+    color: white;
+
+}
+
+.pageButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.recipeCard {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 32px;
+    gap: 40px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.description {
+    width: 600px;
+    margin-top: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.authorInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.authorName {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #000;
+    margin-left: 16px;
+}
+
+.data_post {
+    margin-left: 48px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.6);
+}

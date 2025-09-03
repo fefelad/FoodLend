@@ -12,6 +12,7 @@ import type {
   InstaPost,
   FastPost,
   RecipesData,
+  Blog,
 } from "../shared/types/MocyCategory";
 // Рецепты
 import burger from "../assets/simpleRecipes/burger.png";
@@ -37,6 +38,20 @@ import chickensalad from "../assets/FastRecipes/ChickenSalad.png";
 import sandwich from "../assets/FastRecipes/sandwitch.png";
 import veganLettuce from "../assets/FastRecipes/VeganLettuce.png";
 import soup from "../assets/FastRecipes/soup.png";
+// блог
+import recipe1 from "../assets/Blog/recipe1.png";
+import recipe2 from "../assets/Blog/recipe2.png";
+import recipe3 from "../assets/Blog/recipe3.png";
+import recipe4 from "../assets/Blog/recipe4.png";
+import recipe5 from "../assets/Blog/recipe5.png";
+import recipe6 from "../assets/Blog/recipe6.png";
+// блог Аватар
+import author1 from "../assets/Blog/BlogAvatar/author1.png";
+import author2 from "../assets/Blog/BlogAvatar/author2.png";
+import author3 from "../assets/Blog/BlogAvatar/author3.png";
+import author4 from "../assets/Blog/BlogAvatar/author4.png";
+import author5 from "../assets/Blog/BlogAvatar/author5.png";
+import author6 from "../assets/Blog/BlogAvatar/author6.png";
 
 const categories: CategoriesType[] = [
   {
@@ -457,6 +472,249 @@ export const recipesData: RecipesData = {
   ],
 };
 
+export const BlogPost: Blog[] = [
+  {
+    id: 1,
+    recipeImage: recipe1,
+    title: "Итальянская паста Карбонара",
+    description:
+      "Классическая итальянская паста с хрустящим беконом, сливочным соусом и пармезаном. Идеальное блюдо для уютного вечера.",
+    author: {
+      avatar: author1,
+      firstName: "Мария",
+      lastName: "Иванова",
+    },
+    publishDate: "2024-01-15",
+    category: "Итальянская кухня",
+    cookingTime: "25 минут",
+    difficulty: "Medium",
+  },
+  {
+    id: 2,
+    recipeImage: recipe2,
+    title: "Веганский боул с киноа",
+    description:
+      "Питательный и полезный боул с киноа, свежими овощами, авокадо и тахини. Отлично подходит для здорового обеда.",
+    author: {
+      avatar: author2,
+      firstName: "Алексей",
+      lastName: "Петров",
+    },
+    publishDate: "2024-01-12",
+    category: "Веганская кухня",
+    cookingTime: "20 минут",
+    difficulty: "Easy",
+  },
+  {
+    id: 3,
+    recipeImage: recipe3,
+    title: "Шоколадный фондан",
+    description:
+      "Нежный шоколадный десерт с жидкой сердцевиной. Подается с ванильным мороженым и свежими ягодами.",
+    author: {
+      avatar: author3,
+      firstName: "Екатерина",
+      lastName: "Смирнова",
+    },
+    publishDate: "2024-01-10",
+    category: "Десерты",
+    cookingTime: "35 минут",
+    difficulty: "Hard",
+  },
+  {
+    id: 4,
+    recipeImage: recipe4,
+    title: "Тако с креветками",
+    description:
+      "Мексиканские тако с сочными креветками, свежим салатом и пикантным соусом. Идеально для летнего ужина.",
+    author: {
+      avatar: author4,
+      firstName: "Анастасия",
+      lastName: "Кузнецова",
+    },
+    publishDate: "2024-01-08",
+    category: "Мексиканская кухня",
+    cookingTime: "30 минут",
+    difficulty: "Medium",
+  },
+  {
+    id: 5,
+    recipeImage: recipe5,
+    title: "Тайский суп Том Ям",
+    description:
+      "Острый и ароматный тайский суп с креветками, грибами и кокосовым молоком. Настоящий взрыв вкуса.",
+    author: {
+      avatar: author5,
+      firstName: "Роман",
+      lastName: "Соколов",
+    },
+    publishDate: "2024-01-05",
+    category: "Азиатская кухня",
+    cookingTime: "40 минут",
+    difficulty: "Hard",
+  },
+  {
+    id: 6,
+    recipeImage: recipe6,
+    title: "Средиземноморский салат",
+    description:
+      "Свежий салат с моцареллой, помидорами, огурцами и оливками. Заправлен оливковым маслом и базиликом.",
+    author: {
+      avatar: author6,
+      firstName: "Сергей",
+      lastName: "Васильев",
+    },
+    publishDate: "2024-01-03",
+    category: "Салаты",
+    cookingTime: "15 минут",
+    difficulty: "Easy",
+  },
+  {
+    id: 7,
+    recipeImage: recipe1,
+    title: "Итальянская паста Карбонара",
+    description:
+      "Классическая итальянская паста с хрустящим беконом, сливочным соусом и пармезаном. Идеальное блюдо для уютного вечера.",
+    author: {
+      avatar: author1,
+      firstName: "Мария",
+      lastName: "Иванова",
+    },
+    publishDate: "2024-01-15",
+    category: "Итальянская кухня",
+    cookingTime: "25 минут",
+    difficulty: "Medium",
+  },
+  {
+    id: 8,
+    recipeImage: recipe2,
+    title: "Веганский боул с киноа",
+    description:
+      "Питательный и полезный боул с киноа, свежими овощами, авокадо и тахини. Отлично подходит для здорового обеда.",
+    author: {
+      avatar: author2,
+      firstName: "Алексей",
+      lastName: "Петров",
+    },
+    publishDate: "2024-01-12",
+    category: "Веганская кухня",
+    cookingTime: "20 минут",
+    difficulty: "Easy",
+  },
+  {
+    id: 9,
+    recipeImage: recipe3,
+    title: "Шоколадный фондан",
+    description:
+      "Нежный шоколадный десерт с жидкой сердцевиной. Подается с ванильным мороженым и свежими ягодами.",
+    author: {
+      avatar: author3,
+      firstName: "Екатерина",
+      lastName: "Смирнова",
+    },
+    publishDate: "2024-01-10",
+    category: "Десерты",
+    cookingTime: "35 минут",
+    difficulty: "Hard",
+  },
+  {
+    id: 10,
+    recipeImage: recipe4,
+    title: "Тако с креветками",
+    description:
+      "Мексиканские тако с сочными креветками, свежим салатом и пикантным соусом. Идеально для летнего ужина.",
+    author: {
+      avatar: author4,
+      firstName: "Алла",
+      lastName: "Родионовна",
+    },
+    publishDate: "2024-01-08",
+    category: "Мексиканская кухня",
+    cookingTime: "30 минут",
+    difficulty: "Medium",
+  },
+  {
+    id: 11,
+    recipeImage: recipe5,
+    title: "Тайский суп Том Ям",
+    description:
+      "Острый и ароматный тайский суп с креветками, грибами и кокосовым молоком. Настоящий взрыв вкуса.",
+    author: {
+      avatar: author5,
+      firstName: "Евгений",
+      lastName: "Синицин",
+    },
+    publishDate: "2024-01-05",
+    category: "Азиатская кухня",
+    cookingTime: "40 минут",
+    difficulty: "Hard",
+  },
+  {
+    id: 12,
+    recipeImage: recipe1,
+    title: "Итальянская паста Карбонара",
+    description:
+      "Классическая итальянская паста с хрустящим беконом, сливочным соусом и пармезаном. Идеальное блюдо для уютного вечера.",
+    author: {
+      avatar: author1,
+      firstName: "Мария",
+      lastName: "Иванова",
+    },
+    publishDate: "2024-01-15",
+    category: "Итальянская кухня",
+    cookingTime: "25 минут",
+    difficulty: "Medium",
+  },
+  {
+    id: 13,
+    recipeImage: recipe2,
+    title: "Веганский боул с киноа",
+    description:
+      "Питательный и полезный боул с киноа, свежими овощами, авокадо и тахини. Отлично подходит для здорового обеда.",
+    author: {
+      avatar: author2,
+      firstName: "Алексей",
+      lastName: "Петров",
+    },
+    publishDate: "2024-01-12",
+    category: "Веганская кухня",
+    cookingTime: "20 минут",
+    difficulty: "Easy",
+  },
+  {
+    id: 14,
+    recipeImage: recipe3,
+    title: "Шоколадный фондан",
+    description:
+      "Нежный шоколадный десерт с жидкой сердцевиной. Подается с ванильным мороженым и свежими ягодами.",
+    author: {
+      avatar: author3,
+      firstName: "Екатерина",
+      lastName: "Смирнова",
+    },
+    publishDate: "2024-01-10",
+    category: "Десерты",
+    cookingTime: "35 минут",
+    difficulty: "Hard",
+  },
+  {
+    id: 15,
+    recipeImage: recipe4,
+    title: "Тако с креветками",
+    description:
+      "Мексиканские тако с сочными креветками, свежим салатом и пикантным соусом. Идеально для летнего ужина.",
+    author: {
+      avatar: author4,
+      firstName: "Лена",
+      lastName: "Шишкова",
+    },
+    publishDate: "2024-01-08",
+    category: "Мексиканская кухня",
+    cookingTime: "30 минут",
+    difficulty: "Medium",
+  },
+];
+
 export const handlers = [
   http.get("/api/caregories", () => {
     return HttpResponse.json(categories);
@@ -489,6 +747,29 @@ export const handlers = [
       page,
       limit,
       hasMore: endIndex < InstaPost.length,
+    });
+  }),
+
+  http.get("api/BlogPost", ({ request }) => {
+    const url = new URL(request.url);
+    const page = parseInt(url.searchParams.get("page") || "1");
+    const limit = 5;
+
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+
+    const paginatedPosts = BlogPost.slice(startIndex, endIndex);
+    const totalPosts = BlogPost.length;
+
+    return HttpResponse.json({
+      posts: paginatedPosts,
+      pagination: {
+        currentPage: page,
+        totalPages: Math.ceil(totalPosts / limit),
+        totalPosts,
+        hasNextPage: endIndex < totalPosts,
+        hasPrevPage: page > 1,
+      },
     });
   }),
 ];

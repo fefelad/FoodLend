@@ -1,7 +1,12 @@
 import { useEffect, useRef } from "react";
 import styles from "./Input.module.css";
 
-function Input() {
+interface PropsInpute {
+  value?: string;
+  change: (e: string) => void;
+}
+
+function Input({ value, change }: PropsInpute) {
   const serchRecipes = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -12,6 +17,8 @@ function Input() {
   return (
     <>
       <input
+        value={value}
+        onChange={(e) => change(e.target.value)}
         ref={serchRecipes}
         className={styles.input}
         type="text"

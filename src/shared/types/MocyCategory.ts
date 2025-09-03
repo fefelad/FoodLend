@@ -54,3 +54,19 @@ export interface Recipe {
 export interface RecipesData {
   recipes: Recipe[];
 }
+
+export interface Blog {
+  id: number;
+  recipeImage: string;
+  title: string;
+  description: string;
+  author: {
+    avatar: string;
+    firstName: string;
+    lastName: string;
+  };
+  publishDate: string;
+  category: string;
+  cookingTime: string;
+  difficulty: "Easy" | "Medium" | "Hard";
+}
