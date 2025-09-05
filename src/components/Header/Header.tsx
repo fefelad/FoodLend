@@ -3,16 +3,22 @@ import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import twiter from "../../assets/twitter.svg";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "../../shared/hook/UseTheme";
 
 function Header() {
   const location = useLocation();
+  const { theme, toggleTheme, isDark } = useTheme();
 
   const IsActiveLink = (path: string) => {
     return location.pathname === path ? styles.active : "";
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        theme === "dark" ? styles.dark : styles.light
+      }`}
+    >
       <div className={styles.warpper_logo}>
         <p className={styles.text_logo}>
           Foodieland <span className={styles.text_logo_dot}>.</span>
@@ -63,6 +69,9 @@ function Header() {
         <img src={facebook} alt="facebook" />
         <img src={twiter} alt="twiter" />
         <img src={instagram} alt="instagram" />
+        <button onClick={toggleTheme} className={styles.themeButton}>
+          {isDark ? "☀️" : "🌙"}
+        </button>
       </div>
     </header>
   );

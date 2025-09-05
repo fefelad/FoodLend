@@ -3,6 +3,8 @@
     padding: 0px;
     margin: 0px;
     border: none;
+    color: var(--text-color) !important;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
 }
 
 *,
@@ -111,4 +113,44 @@ legend {
 
 input[type='file'] {
     max-width: 100%;
+}
+
+
+
+:root,
+.light {
+    /* Базовые цвета для светлой темы */
+    --bg-color: #ffffff;
+    --text-color: #000000 !important;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --border-color: #dee2e6;
+    --card-bg: #f8f9fa;
+    --input-bg: #ffffff;
+    --input-border: #ced4da;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+    /* Цвета для темной темы */
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff !important;
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --border-color: #495057;
+    --card-bg: #2d2d2d;
+    --input-bg: #343a40;
+    --input-border: #6c757d;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Применяем переменные к основным элементам */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    line-height: 1.6;
 }
