@@ -1,0 +1,29 @@
+.text_message {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #1B5E20;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    font-weight: bold;
+    top: 240px;
+    left: 50px;
+
+}
+
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: green !important;
+}

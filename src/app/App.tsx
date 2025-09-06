@@ -1,4 +1,5 @@
 // import Footer from "../components/Footer/Footer";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import About from "../Page/About/About";
 import Blog from "../Page/Blog/Blog";
@@ -25,7 +26,7 @@ function App() {
                 <Route path="/about" element={<About />} />
               </Routes>
             </main>
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </Router>
       </ThemeProvider>
