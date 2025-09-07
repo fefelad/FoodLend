@@ -47,7 +47,7 @@ function FastRecipes() {
               <HelpAtribut text={fastRecipes.helpatribut} type="meat" />
             </div>
             <div className={styles.btn_like}>
-              <Like />
+              <Like recipeid={fastRecipes.id} recipeData={fastRecipes} />
             </div>
           </article>
         ))}

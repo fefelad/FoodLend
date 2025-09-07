@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Input from "../../../shared/ui/Input/Input";
 import styles from "./SerchRecipes.module.css";
 import type { Recipe, RecipesData } from "../../../shared/types/MocyCategory";
 import axios from "axios";
@@ -59,7 +58,6 @@ function SerchRecipes() {
             </div>
           ))}
         </div>
-        <Input />
       </div>
 
       <div className={styles.allRecipes}>

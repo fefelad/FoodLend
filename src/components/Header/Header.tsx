@@ -55,14 +55,6 @@ function Header() {
               Contact
             </Link>
           </li>
-          <li>
-            <Link
-              className={`${styles.link} ${IsActiveLink("/about")}`}
-              to="/about"
-            >
-              About us
-            </Link>
-          </li>
         </ul>
       </nav>
       <div className={styles.wrapper_link}>

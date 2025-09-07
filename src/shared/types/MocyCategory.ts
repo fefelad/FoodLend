@@ -1,19 +1,19 @@
 export interface CategoriesType {
-  id?: number;
+  id: number;
   name?: string;
   img?: string;
   bgColor: string;
 }
 
 export interface ReceptType {
-  id?: number;
+  id: number;
   description?: string;
   img: string;
   helpatribut: string;
 }
 
 export interface InstaPost {
-  id?: number;
+  id: number;
   title?: string;
   img?: string;
   plase?: string;
@@ -29,7 +29,7 @@ export interface InsPostResponse {
 }
 
 export interface FastPost {
-  id?: number;
+  id: number;
   description?: string;
   img: string;
   helpatribut: string;

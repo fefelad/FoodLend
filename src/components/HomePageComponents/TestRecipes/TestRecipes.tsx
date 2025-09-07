@@ -41,7 +41,7 @@ function TestRecipes() {
               <HelpAtribut type="time" text="30 Minutes" />
               <HelpAtribut type="meat" text={recipes.helpatribut} />
             </div>
-            <Like />
+            <Like recipeid={recipes.id} recipeData={recipes} />
           </div>
         ))}
       </div>

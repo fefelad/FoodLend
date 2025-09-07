@@ -1,10 +1,52 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import styles from "./Like.module.css";
 
-function Like() {
+interface ILikePoprs {
+  recipeid: string | number;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  recipeData?: any;
+  onLike?: (isLiked: boolean) => void;
+}
+
+function Like({ recipeid, recipeData, onLike }: ILikePoprs) {
   const [isClick, setIsClick] = useState<boolean>(false);
+
+  useEffect(() => {
+    const likedRecipes = JSON.parse(
+      localStorage.getItem("likedRecipes") || "{}"
+    );
+    setIsClick(!!likedRecipes[recipeid]);
+  }, [recipeid]);
+
+  const handleClikc = () => {
+    const likedRecipes = JSON.parse(
+      localStorage.getItem("likedRecipes") || "{}"
+    );
+    const favoriteRecipes = JSON.parse(
+      localStorage.getItem("favoriteRecipes") || "{}"
+    );
+
+    if (isClick) {
+      delete likedRecipes[recipeid];
+      delete favoriteRecipes[recipeid];
+    } else {
+      likedRecipes[recipeid] = true;
+      if (recipeData) {
+        favoriteRecipes[recipeid] = recipeData;
+      }
+    }
+
+    localStorage.setItem("likedRecipes", JSON.stringify(likedRecipes));
+    localStorage.setItem("favoriteRecipes", JSON.stringify(favoriteRecipes));
+    setIsClick(!isClick);
+
+    if (onLike) {
+      onLike(!isClick);
+    }
+  };
+
   return (
-    <button onClick={() => setIsClick(!isClick)} className={styles.btn_like}>
+    <button onClick={handleClikc} className={styles.btn_like}>
       {isClick ? (
         <svg
           width="22"

@@ -29,11 +29,6 @@ function Footer() {
                 Contact
               </a>
             </li>
-            <li>
-              <a className={styles.link_footer} href="">
-                About us
-              </a>
-            </li>
           </ul>
         </nav>
       </div>
