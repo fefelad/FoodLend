@@ -60,6 +60,7 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 }
 
 .atribute_btn:hover {

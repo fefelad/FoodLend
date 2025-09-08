@@ -45,7 +45,7 @@ function Action() {
         </div>
       </div>
       <div>
-        <img src={chikenwing} alt="chiken" />
+        <img className={styles.chiken} src={chikenwing} alt="chiken" />
       </div>
     </div>
   );
