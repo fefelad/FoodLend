@@ -2,6 +2,7 @@
   "name": "foodland",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://fefelad.github.io/FoodLend/",
   "type": "module",
   "scripts": {
     "dev": "vite",
