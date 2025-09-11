@@ -29,3 +29,5 @@ function Input({ value, change }: PropsInpute) {
 }
 
 export default Input;
+
+

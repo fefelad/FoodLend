@@ -70,3 +70,5 @@ export interface Blog {
   cookingTime: string;
   difficulty: "Easy" | "Medium" | "Hard";
 }
+
+

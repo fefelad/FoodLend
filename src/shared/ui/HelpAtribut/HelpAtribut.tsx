@@ -19,3 +19,5 @@ function HelpAtribit({ text, type }: DishAttributeProps) {
 }
 
 export default memo(HelpAtribit);
+
+
