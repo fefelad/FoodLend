@@ -20,3 +20,5 @@ function Btn({ textBtn, img, onClick }: BtnProps) {
 }
 
 export default memo(Btn);
+
+
